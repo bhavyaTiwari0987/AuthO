@@ -15,7 +15,7 @@ export const AuthButton = () => {
     const sendToken = async () => {
       if (isAuthenticated) {
         const token = await getAccessTokenSilently();
-        const res = await axios.post("http://localhost:5000/auth/callback", {
+        const res = await axios.post("https://autho-xn16.onrender.com/auth/callback", {
           token,
         });
         console.log("this is response", res);
